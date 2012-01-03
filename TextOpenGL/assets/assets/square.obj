@@ -1,0 +1,9 @@
+#Produced by Art of Illusion 2.8.1, Mon Oct 31 19:22:17 PKT 2011
+s 0
+g Spline_Mesh_2
+v -1 -0.99806 0
+v 1.00678 -0.99806 0
+v -1 1 0
+v 1.00678 1 0
+f 1 2 4
+f 1 4 3
