@@ -1,1 +1,44 @@
-Hello world this is Mustafa Neguib!!!!
+/******************
+ * 
+ * 
+    Copyright (C) 2012  Mustafa Neguib
+    Copyright (C) 2008-2012 MN Tech Solutions (www.mntechsolutions.net)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+Also add information on how to contact you by electronic and paper mail.
+ * 
+ * 
+ */
+
+
+/*********************
+ * Sources used for the project
+ *  * http://developer.android.com/index.html 
+ * "Pro Android 2" by Sayed Hashimi, Satya Komatineni, and Dave MacLean
+ * http://blog.jayway.com/2009/12/03/opengl-es-tutorial-for-android-part-i/  
+ * 
+ * i have taken help in understanding how to develop an object loader used in the book,
+ * "Beginning Android Games by Mario Zechner", chapter 11: 3D Programming Tricks section, "Loading Models"
+ * Texture atlas has been used to make the use of textures easier.
+ * 
+ * http://insanitydesign.com/wp/projects/nehe-android-ports/
+ *********************/
+
+
+This project has been developed for mobile devices running Android 2.2 and using OpenGL ES 1.0 as the graphics library.
+This project has only been tested on Samsung Galaxy Ace GT-S5830 running Android 2.2.1.
+This is an open source project and the license is given above and you may further work on developing this project and use it in your project, however 
+follow the rules and regulations of the license and abide by them.
+
+Mustafa Neguib of MN Tech Solutions (www.mntechsolutions.net)
