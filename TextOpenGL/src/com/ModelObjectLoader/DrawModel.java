@@ -2,7 +2,7 @@
  * 
  * 
     Copyright (C) 2012  Mustafa Neguib
-    Copyright (C) 2008-2012 MN Tech Solutions
+    Copyright (C) 2008-2012 MN Tech Solutions (www.mntechsolutions.net)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

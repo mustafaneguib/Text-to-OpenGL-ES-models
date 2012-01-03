@@ -2,7 +2,7 @@
  * 
  * 
     Copyright (C) 2012  Mustafa Neguib
-    Copyright (C) 2008-2012 MN Tech Solutions
+    Copyright (C) 2008-2012 MN Tech Solutions (www.mntechsolutions.net)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -20,6 +20,19 @@ Also add information on how to contact you by electronic and paper mail.
  * 
  * 
  */
+
+/*********************
+ * Sources used for the project
+ *  http://developer.android.com/index.html 
+ * "Pro Android 2" by Sayed Hashimi, Satya Komatineni, and Dave MacLean
+ * http://blog.jayway.com/2009/12/03/opengl-es-tutorial-for-android-part-i/  
+ * 
+ * i have taken help in understanding how to develop an object loader used in the book,
+ * "Beginning Android Games by Mario Zechner", chapter 11: 3D Programming Tricks section, "Loading Models"
+ * Texture atlas has been used to make the use of textures easier.
+ * 
+ * http://insanitydesign.com/wp/projects/nehe-android-ports/
+ *********************/
 
 package com.TextOpenGL;
 
