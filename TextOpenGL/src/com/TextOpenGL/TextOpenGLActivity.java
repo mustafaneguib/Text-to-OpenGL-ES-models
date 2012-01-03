@@ -1,3 +1,26 @@
+/******************
+ * 
+ * 
+    Copyright (C) 2012  Mustafa Neguib
+    Copyright (C) 2008-2012 MN Tech Solutions
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+Also add information on how to contact you by electronic and paper mail.
+ * 
+ * 
+ */
+
 package com.TextOpenGL;
 
 import java.io.FileOutputStream;
@@ -31,7 +54,7 @@ public class TextOpenGLActivity extends Activity implements GLSurfaceView.Render
 	private GLSurfaceView glSurface;
 	private float translateX=0.0f;
 	private Integer num=0;
-	
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -40,16 +63,16 @@ public class TextOpenGLActivity extends Activity implements GLSurfaceView.Render
 		requestWindowFeature(Window.FEATURE_NO_TITLE); 
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN); // (NEW)
-				glSurface= new GLSurfaceView(this);
-				//glSurface.setEGLConfigChooser(false);//do not use this. this will not letthe depth buffering to work  
+		glSurface= new GLSurfaceView(this);
+		//glSurface.setEGLConfigChooser(false);//do not use this. this will not letthe depth buffering to work  
 
-				glSurface.setRenderer(this);
+		glSurface.setRenderer(this);
 
-				glSurface.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
+		glSurface.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
 
-				//glSurface.setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
-				setContentView(glSurface);
-				getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		//glSurface.setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
+		setContentView(glSurface);
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
 	}
 
@@ -100,47 +123,47 @@ public class TextOpenGLActivity extends Activity implements GLSurfaceView.Render
 
 		word="abacadaeafagahaiajakalamanaoapaqarasatauavawaxayaz";
 
-					
-			//word=num.toString();
-			//word="Hello World!!! My name is Mustafa\n Neguib. HElLo";
+
+		//word=num.toString();
+		//word="Hello World!!! My name is Mustafa\n Neguib. HElLo";
 		//word="Hello World!!! My name is Mustafa Neguib.";
-			gl.glTranslatef(translateX,0,0);
-			gl.glPushMatrix();
+		gl.glTranslatef(translateX,0,0);
+		gl.glPushMatrix();
 
-			while(j<word.length())
+		while(j<word.length())
+		{
+			i=0;
+
+
+			while(i<95)
 			{
-				i=0;
 
-
-				while(i<95)
+				if(word.charAt(j)==listText.get(i).getCharacter())
 				{
 
-					if(word.charAt(j)==listText.get(i).getCharacter())
-					{
-
-						listText.get(i).getCharacterModel().draw(gl);
-						gl.glTranslatef(1.2f,0,0);
-					}//end if
-					/*else if(word.charAt(j)=='\n')
+					listText.get(i).getCharacterModel().draw(gl);
+					gl.glTranslatef(1.2f,0,0);
+				}//end if
+				/*else if(word.charAt(j)=='\n')
 					{
 						gl.glTranslatef(-0.415f,-0.02f,0);
 					}//end else if
-*/
-					i++;
-				}//end while
+				 */
+				i++;
+			}//end while
 
 
-				j++;
-			}//while
+			j++;
+		}//while
 
-			gl.glPopMatrix();
+		gl.glPopMatrix();
 
-			translateX=translateX-0.05f;
+		translateX=translateX-0.05f;
 
-			if(translateX<-80)
-			{
-				translateX=0;	
-			}		
+		if(translateX<-80)
+		{
+			translateX=0;	
+		}		
 
 		/*		word=((Integer)counter).toString();
 		while(j<word.length())
@@ -169,11 +192,11 @@ public class TextOpenGLActivity extends Activity implements GLSurfaceView.Render
 		gl.glPopMatrix();
 
 		gl.glDisable(GL10.GL_BLEND);
-		
+
 		num++;
 		if(num%2==0)
 		{
-		num++;
+			num++;
 		}//end if
 
 	}
@@ -260,7 +283,7 @@ public class TextOpenGLActivity extends Activity implements GLSurfaceView.Render
 			{
 				Log.v("x: ",((Float)x).toString());
 			}//end if
-*/
+			 */
 			x=x+32.0f;
 			i++;
 		}//end while
@@ -268,3 +291,4 @@ public class TextOpenGLActivity extends Activity implements GLSurfaceView.Render
 
 	}
 }
+
