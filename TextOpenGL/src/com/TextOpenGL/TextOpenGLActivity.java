@@ -103,43 +103,16 @@ public class TextOpenGLActivity extends Activity implements GLSurfaceView.Render
 
 		GLU.gluLookAt(gl, 0, 0, 5, 0, 0, 0, 0, 1,0);
 
-		gl.glScalef(0.2f,0.2f,0.2f);
+		gl.glScalef(0.4f,0.4f,0.4f);
 		//gl.glTranslatef(-30,18,0);
 		int i=0,j=0;
 
 		gl.glPushMatrix();
 
-		/* 
-		gl.glTranslatef(translateX,0,0);
-		while(i<94)
-		{
-			listText.get(i).getCharacterModel().draw(gl);
-			gl.glTranslatef(2,0,0);
-
-			i++;
-		}//end while
-
-		translateX=translateX-0.1f;
-
-		if(translateX<-160)
-		{
-			translateX=94;	
-		}
-
-		 */
-		//translateX=-5;	
-
-		//word=((Integer)counter).toString();
-		//word="abacadaeafagahaiajakalamanaoapaqarasatauavawaxayaz";
-
-		//char [] characters={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',',','<','>','.','/','?',';',':','\'','\"','[',']','{','}','`','~','!','@','#','$','%','^','&','*','(',')','_','+','-','=','0','1','2','3','4','5','6','7','8','9','\\','|',' '};
-
-		word="abacadaeafagahaiajakalamanaoapaqarasatauavawaxayaz";
-
 
 		//word=num.toString();
-		//word="Hello World!!! My name is Mustafa\n Neguib. HElLo";
-		//word="Hello World!!! My name is Mustafa Neguib.";
+		word="Hello World !!!";
+		
 		gl.glTranslatef(translateX,0,0);
 		gl.glPushMatrix();
 
@@ -154,8 +127,13 @@ public class TextOpenGLActivity extends Activity implements GLSurfaceView.Render
 				if(word.charAt(j)==listText.get(i).getCharacter())
 				{
 
+					if(word.charAt(j)=='a')
+					{
+						//gl.glTranslatef(-0.4f,0,0);
+					}//end if
+					
 					listText.get(i).getCharacterModel().draw(gl);
-					gl.glTranslatef(1.2f,0,0);
+					gl.glTranslatef(0.61f,0,0);
 				}//end if
 				/*else if(word.charAt(j)=='\n')
 					{
@@ -297,7 +275,7 @@ public class TextOpenGLActivity extends Activity implements GLSurfaceView.Render
 				Log.v("x: ",((Float)x).toString());
 			}//end if
 			 */
-			x=x+32.0f;
+			x=x+32;
 			i++;
 		}//end while
 
